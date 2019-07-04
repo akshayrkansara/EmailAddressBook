@@ -1,0 +1,20 @@
+﻿<!--Anil,Akshay,Tyler,Shubham-->
+    <Window x:Class="testingFilereading.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:testingFilereading"
+        mc:Ignorable="d"
+        Title="E-Mail Address Book" Height="400" Width="600" Icon="2.png" ResizeMode="NoResize" WindowStartupLocation="CenterScreen">
+    <Grid>
+        <Grid.Background>
+            <ImageBrush ImageSource="1.jpg" Opacity=".3"/>
+        </Grid.Background>
+            <Grid.RowDefinitions>
+            <RowDefinition Height="*"/>
+        </Grid.RowDefinitions>
+        <ListBox Name="ListBox" Grid.Row="1"  ItemsSource="{Binding Names, Mode=TwoWay, UpdateSourceTrigger=PropertyChanged}" SelectedItem="{Binding SelectedName}"  Height="200" Width="400" Opacity=".8" HorizontalContentAlignment="Right" VerticalContentAlignment="Center" FontSize="20" FontWeight="ExtraBold"/>
+        <Button Name="btnDisplay" Click="btnDisplay_Click" Content="Contact Info" FontSize="25" FontWeight="Bold" Height="50" Width="200" HorizontalAlignment="Center" VerticalAlignment="Bottom" Margin="10"/>
+    </Grid>
+</Window>

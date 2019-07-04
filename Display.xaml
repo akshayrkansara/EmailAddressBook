@@ -1,0 +1,25 @@
+﻿<!--Anil,Akshay,Tyler,Shubham-->
+    <Window x:Class="testingFilereading.Display"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:testingFilereading"
+        mc:Ignorable="d"
+        Title="Contact Information" Height="300" Width="400" ResizeMode="NoResize" Icon="2.png">
+    <Grid>
+        <Grid.Background>
+            <ImageBrush ImageSource="1.jpg" Opacity=".3"/>
+        </Grid.Background>
+        <Grid.RowDefinitions>
+            <RowDefinition Height="*"/>
+            <RowDefinition Height="*"/>
+            <RowDefinition Height="*"/>
+        </Grid.RowDefinitions>
+        <Label Name="DisplayName" Grid.Row="0" Width="300" Margin="5" FontSize="20" FontWeight="Bold" HorizontalContentAlignment="Left" VerticalContentAlignment="Center"/>
+        <Label Name="DisplayEmail" Grid.Row="1" Width="300" Margin="5" FontSize="20" FontWeight="Bold" HorizontalContentAlignment="Left" VerticalContentAlignment="Center">Email Address:
+        </Label>
+        <Label Name="DisplayPNo" Grid.Row="2" Width="300" Margin="5" FontSize="20" FontWeight="Bold" HorizontalContentAlignment="Left" VerticalContentAlignment="Center">Phone No: 
+        </Label>
+    </Grid>
+</Window>
